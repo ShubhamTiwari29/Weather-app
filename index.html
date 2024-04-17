@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-slate-400 w-full h-[100vh]">
+    <div
+      class="w-3/4 h-[90%] flex bg-white mx-auto my-10 rounded-3xl overflow-hidden"
+    >
+      <!-- left section -->
+      <div class="w-1/4 bg-orange-300">
+        <div class="mx-auto my-5 items-center flex flex-col w-[85%] bg-white">
+          <form class="my-3" action="">
+            <input type="text" name="" id="city_Name" />
+            <input
+              class="bg-cyan-400 py-1 px-1"
+              id="Submit"
+              type="submit"
+              value="Search"
+            />
+          </form>
+          <div>
+            <img src="" alt="" />
+          </div>
+          <p><span id="City"></span>-<span id="Country"></span></p>
+          <p></p>
+          <h1>Temperature<span id="temp"></span>°C</h1>
+
+          <hr class="w-3/4 mx-auto" />
+          <p><span id="weather"></span></p>
+          <p>Feel Like<span id="feel"></span>°C</p>
+        </div>
+        <!-- left sextion -->
+      </div>
+      <!-- left section end here -->
+      right section
+      <div class="w-3/4 bg-slate-100">
+        <p>humidity <span id="Humidity"></span></p>
+        <p>Pressure <span id="Pressure"></span></p>
+        <p>Visibility <span id="Visibility"></span></p>
+        <p>WindSpeed <span id="WindSpeed"></span></p>
+        <div>
+          <h1>Top City</h1>
+          <ul>
+            <li id="gujarat">
+              <a href="">Gujarat</a>
+            </li>
+            <li id="lucknow"><a href="">Lucknow</a></li>
+            <li id="mumbai"><a href="">Mumbai</a></li>
+            <li id="Bengaluru"><a href="">Banglore</a></li>
+          </ul>
+        </div>
+
+        <!-- right section -->
+      </div>
+      <!-- right section end here -->
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
