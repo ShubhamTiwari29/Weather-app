@@ -93,8 +93,8 @@ fetch(apiUrl)
     City.innerHTML = cityName;
     humidity.innerHTML =cityHumidity;
     pressure.innerHTML = cityPressure;
-    speed.innerHTML = Math.ceil(citySpeed);
-    Visibility.innerHTML = cityVisibility
+    speed.innerHTML = (citySpeed);
+    Visibility.innerHTML = (cityVisibility/1000);
 
 
 
