@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>Weather App</title>
   </head>
   <body class="bg-slate-400 w-full h-full">
     <div
@@ -51,20 +51,62 @@
       </div>
       <!-- left section end here -->
 
-      <div class="w-3/4 bg-slate-100">
-        <p>humidity <span id="Humidity"></span></p>
-        <p>Pressure <span id="Pressure"></span></p>
-        <p>Visibility <span id="Visibility"></span></p>
-        <p>WindSpeed <span id="WindSpeed"></span></p>
-        <div>
-          <h1>Top City</h1>
-          <ul>
-            <li id="gujarat">
+      <div class="flex flex-col w-3/4 bg-[#171821] items-center">
+        <div class="bg-[#21222D] my-4 rounded-lg">
+          <div class="flex my-14 mx-10 text-center">
+            <div class="w-48 h-52 bg-[#171821] rounded-lg mx-6 py-6 text-white">
+              <i class="fa-solid fa-droplet text-4xl"></i>
+              <p class="text-xl my-5">humidity</p>
+              <span id="Humidity"></span>
+            </div>
+
+            <div class="w-48 h-52 bg-[#171821] rounded-lg mx-6 p-6 text-white">
+              <i class="fa-solid fa-meteor text-4xl"></i>
+              <p>Pressure</p>
+              <span id="Pressure"></span>
+            </div>
+
+            <div class="w-48 h-52 bg-[#171821] rounded-lg mx-6 p-6 text-white">
+              <i class="fa-solid fa-droplet text-4xl"></i>
+              <p>Visibility</p>
+              <span id="Visibility"></span>
+            </div>
+
+            <div class="w-48 h-52 bg-[#171821] rounded-lg mx-6 p-6 text-white">
+              <i class="fa-solid fa-wind text-4xl"></i>
+              <p>WindSpeed</p>
+              <span id="WindSpeed"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col my-14 text-center">
+          <h1 class="text-white font-bold text-2xl mb-4">Top City</h1>
+          <ul class="flex my-12">
+            <li
+              class="w-48 h-20 bg-slate-500 rounded-lg mx-6 p-6 text-white"
+              id="gujarat"
+            >
               <a href="">Gujarat</a>
             </li>
-            <li id="lucknow"><a href="">Lucknow</a></li>
-            <li id="mumbai"><a href="">Mumbai</a></li>
-            <li id="Bengaluru"><a href="">Banglore</a></li>
+            <li
+              class="w-48 h-20 bg-slate-500 rounded-lg mx-6 p-6 text-white"
+              id="lucknow"
+            >
+              <a href="">Lucknow</a>
+            </li>
+            <li
+              class="w-48 h-20 bg-slate-500 rounded-lg mx-6 p-6 text-white"
+              id="mumbai"
+            >
+              <a href="">Mumbai</a>
+            </li>
+            <li
+              class="w-48 h-20 bg-slate-500 rounded-lg mx-6 p-6 text-white"
+              id="Bengaluru"
+            >
+              <a href="">Banglore</a>
+            </li>
           </ul>
         </div>
 
