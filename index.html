@@ -15,10 +15,10 @@
   </head>
   <body class="bg-[#21222D] w-full h-full">
     <div
-      class="w-3/4 h-[90%] flex bg-white mx-auto my-20 rounded-3xl shadow-2xl overflow-hidden"
+      class="xl:w-3/4 md:w-3/4 w-[400px] h-[90%] flex bg-[#171821] mx-auto md:my-20 rounded-3xl shadow-2xl overflow-hidden"
     >
       <!-- left section -->
-      <div class="w-1/4 bg-orange-300">
+      <div class="lg:w-1/2 xl:w-1/4 min-w-[300px] bg-orange-300 w-full">
         <div class="mx-auto my-5 items-center flex flex-col w-[85%]">
           <form class="my-4" action="">
             <input
@@ -31,7 +31,11 @@
             <i id="Submit" class="fa-solid fa-magnifying-glass"></i>
           </form>
           <div>
-            <img class="mx-2 my-2" src="./Image/pngwing.com (1).png" alt="" />
+            <img
+              class="w-[400px]mx-2 my-2"
+              src="./Image/pngwing.com (1).png"
+              alt=""
+            />
           </div>
           <p class="py-6 font-semibold text-3xl">
             <span id="City"></span>-<span id="Country"></span>
@@ -51,8 +55,10 @@
       </div>
       <!-- left section end here -->
 
-      <div class="flex flex-col w-3/4 bg-[#171821] items-center">
-        <div class="bg-[#21222D] my-5 rounded-3xl">
+      <div
+        class="lg:flex flex-col lg:w-1/2 xl:w-3/4 bg-[#171821] items-center hidden"
+      >
+        <div class="bg-[#21222D] w-[95%] my-5 rounded-3xl">
           <div class="flex my-14 mx-10 text-center">
             <div
               class="w-48 h-52 bg-[#171821] rounded-lg mx-6 py-6 shadow-2xl text-white"
@@ -87,7 +93,7 @@
             </div>
           </div>
         </div>
-        <div class="bg-[#21222D] mb-4 rounded-3xl">
+        <div class="bg-[#21222D] mb-4 rounded-3xl w-[95%]">
           <div class="flex flex-col my-14 mx-10 text-center">
             <h1 class="text-white font-bold text-2xl mb-4">Top City</h1>
             <p class="text-gray-400 text-sm mb-4">

@@ -18,7 +18,7 @@ const bengaluru = document.getElementById("Bengaluru");
 
 
 getWeather("Delhi");
-Submit.addEventListener('click', function(){
+Submit.addEventListener('click', function(event){
     event.preventDefault();
     console.log(city.value);
 console.log("clicked");
@@ -26,26 +26,34 @@ getWeather(city.value);
 city.value = "";
 })
 
+city.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        getWeather(city.value);
+        city.value = "";
+    }
+});
 
-lucknow.addEventListener('click' , function(){
+
+lucknow.addEventListener('click' , function(event){
    event.preventDefault();
   console.log("lucknow clicked")
   getWeather("Lucknow");
 })
 
-gujarat.addEventListener('click' , function(){
+gujarat.addEventListener('click' , function(event){
    event.preventDefault();
   console.log("Gujarat clicked")
   getWeather("Gujarat");
 })
 
-mumbai.addEventListener('click' , function(){
+mumbai.addEventListener('click' , function(event){
    event.preventDefault();
   console.log("Mumbai clicked")
   getWeather("Mumbai");
 })
 
-bengaluru.addEventListener('click' , function(){
+bengaluru.addEventListener('click' , function(event){
    event.preventDefault();
   console.log("Bengaluru clicked")
   getWeather("Bengaluru");
@@ -66,7 +74,9 @@ fetch(apiUrl)
     if (response.ok) {
       return response.json(); 
     } else {
+alert("Enter right palce")
       throw new Error('Weather data not available');
+      
     }
   })
   .then(data => {
