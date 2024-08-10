@@ -3,14 +3,13 @@ const city = document.getElementById('city_Name');
 const Submit = document.getElementById("Submit");
 const Temperature = document.getElementById("temp");
 const weatherCondition = document.getElementById("weather");
-const Feel = document.getElementById("feel")
-const Country = document.getElementById("Country")
-const City = document.getElementById("City")
-// const Data = document.getElementById("Data");
-const humidity = document.getElementById("Humidity")
-const pressure =document.getElementById("Pressure")
-const Visibility = document.getElementById("Visibility")
-const speed = document.getElementById("WindSpeed")
+const Feel = document.getElementById("feel");
+const Country = document.getElementById("Country");
+const City = document.getElementById("City");
+const humidity = document.getElementById("Humidity");
+const pressure =document.getElementById("Pressure");
+const Visibility = document.getElementById("Visibility");
+const speed = document.getElementById("WindSpeed");
 const lucknow = document.getElementById("lucknow");
 const gujarat = document.getElementById("gujarat");
 const mumbai = document.getElementById("mumbai");
@@ -18,6 +17,7 @@ const bengaluru = document.getElementById("Bengaluru");
 
 
 getWeather("Delhi");
+
 Submit.addEventListener('click', function(event){
     event.preventDefault();
     console.log(city.value);
@@ -74,7 +74,7 @@ fetch(apiUrl)
     if (response.ok) {
       return response.json(); 
     } else {
-alert("Enter right palce")
+        alert("Enter right palce")
       throw new Error('Weather data not available');
       
     }
@@ -90,7 +90,7 @@ alert("Enter right palce")
       const cityHumidity = data.main.humidity;
       const cityPressure = data.main.pressure;
       const citySpeed = data.wind.speed;
-      const cityVisibility =data.visibility
+      const cityVisibility =data.visibility;
 
     
     console.log('Temperature:', temperature);
@@ -115,7 +115,3 @@ alert("Enter right palce")
   });
   }
 
-
-
-
- 
